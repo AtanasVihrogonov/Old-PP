@@ -1,0 +1,25 @@
+{
+  "name": "myportfolio",
+  "version": "1.0.0",
+  "description": "Personal Portfolio",
+  "main": "script.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "sass": "node-sass -w scss/ -o docs/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AtanasVihrogonov/mpp.git"
+  },
+  "author": "Atanas Vihrogonov <Vihrogonov@protonmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AtanasVihrogonov/mpp/issues"
+  },
+  "homepage": "https://github.com/AtanasVihrogonov/mpp#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
