@@ -1,0 +1,34 @@
+.button {
+  border-radius: 0;
+  outline: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: none;
+  border: none;
+
+  &--primary {
+    padding: 8px 18px;
+    color: #111;
+    border: 2px solid #111;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    background: #f8f8f8;
+    margin-right: 15px;
+  }
+
+  &--primary:hover,
+  &--primary:focus {
+    color: #f8f8f8;
+    background-color: #111;
+  }
+}
+
+.button:focus,
+.button.active,
+.button:active {
+  background-image: none;
+  box-shadow: none;
+  outline: 0 none;
+}

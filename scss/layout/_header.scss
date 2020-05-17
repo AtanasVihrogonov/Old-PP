@@ -1,0 +1,31 @@
+.header {
+  background-size: cover;
+  background-image: url(/img/image1.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  
+  &__content {
+    margin-left: 2rem;
+  }
+
+  &__text {
+
+  }
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
