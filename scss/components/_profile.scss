@@ -1,29 +1,23 @@
 .img {
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   &__item {
-    position: absolute;
-    top: 18%;
-    left: 20%;
-    background-position: center;
-    margin: 0 auto;
-    width: 80%;
-    height: 80%;
     img {
-      -webkit-box-shadow: 1px -2px 0px -4px rgba(0,0,0,0.56);
-      -moz-box-shadow: 1px -2px 0px -4px rgba(0,0,0,0.56);
-      box-shadow: 1px -2px 0px -4px rgba(0,0,0,0.56);
-    }
+      border: 5px inset $third-color;
+      border-radius: 30px 10px 30px 10px;
+    }  
   }
 }
 
 .profile {
   position: relative;
   letter-spacing: 0.5px;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   &__text {
     position: absolute;
     top: 10%;
-    left: 11%;
+    left: 10%;
     width: 80%;
     height: 80%;
     line-height: 1.2;
@@ -36,7 +30,38 @@
     left: 11%;
     transform: scale(0.95);
   }
+
+  .heading {
+    h2:after {
+      position: absolute;
+      content: '';
+      width: 40px;
+      height: 4px;
+      background: $third-color;
+      top: 60px;
+      left: 0;
+    }
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
