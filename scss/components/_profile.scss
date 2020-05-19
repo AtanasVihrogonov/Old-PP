@@ -1,0 +1,64 @@
+.img {
+  position: relative;
+  &__item {
+    position: absolute;
+    top: 18%;
+    left: 20%;
+    background-position: center;
+    margin: 0 auto;
+    width: 80%;
+    height: 80%;
+    img {
+      -webkit-box-shadow: 1px -2px 0px -4px rgba(0,0,0,0.56);
+      -moz-box-shadow: 1px -2px 0px -4px rgba(0,0,0,0.56);
+      box-shadow: 1px -2px 0px -4px rgba(0,0,0,0.56);
+    }
+  }
+}
+
+.profile {
+  position: relative;
+  letter-spacing: 0.5px;
+  font-size: 1.4rem;
+  &__text {
+    position: absolute;
+    top: 10%;
+    left: 11%;
+    width: 80%;
+    height: 80%;
+    line-height: 1.2;
+  }
+
+  &__button {
+    letter-spacing: 1px;
+    position: absolute;
+    top: 80%;
+    left: 11%;
+    transform: scale(0.95);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -12,15 +12,15 @@ html {
 body {
   font-family: 'Josefin+Slab', serif;
   font-weight: 400;
-  color: #333;
-  background-color: #fff;
+  color: #252525;
+  background-color: #dfe1e0;
   font-size: 15px;
   line-height: 24px;
   hyphens: auto;
-  overflow-wrap: break-word; }
+  overflow-wrap: break-word;
+  box-shadow: #111; }
 
 .wrap {
-  background-color: #dfe1e0;
   padding-top: 1px; }
   .wrap__content {
     display: grid;
@@ -31,33 +31,58 @@ body {
     margin: 30px; }
 
 .box {
-  background-color: #fff;
+  background-color: #f4f3f4;
   width: 100%;
   height: 550px; }
 
 /*
  *  Headings
  */
+h1 {
+  font-weight: 100;
+  font-size: 4rem;
+  line-height: 3rem;
+  margin-bottom: 1rem; }
+
+h3 {
+  margin: 0;
+  font-weight: 100;
+  font-size: 1.5rem;
+  line-height: 4.5rem; }
+
+.header__buttons {
+  margin-top: 20px; }
+
 .button {
+  font-family: 'Jost', sans-serif;
   border-radius: 0;
   outline: none;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: bold;
   box-shadow: none;
-  border: none; }
+  border: none;
+  padding: 8px 15px;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.08rem;
+  margin-right: 15px; }
+  .button--secondary {
+    color: #f4f3f4;
+    border: 1px solid #252525;
+    background-color: black; }
+  .button--secondary:hover {
+    background-color: transparent;
+    border: 1px solid #252525;
+    color: #252525; }
+  .button--secondary:focus {
+    color: #f4f3f4;
+    background-color: #252525; }
   .button--primary {
-    padding: 8px 18px;
-    color: #111;
-    border: 2px solid #111;
-    font-size: 13px;
-    letter-spacing: 2px;
-    font-weight: 700;
-    background: #f8f8f8;
-    margin-right: 15px; }
+    color: #252525;
+    border: 1px solid #252525; }
   .button--primary:hover, .button--primary:focus {
-    color: #f8f8f8;
-    background-color: #111; }
+    color: #f4f3f4;
+    background-color: #252525; }
 
 .button:focus,
 .button.active,
@@ -68,8 +93,8 @@ body {
 
 .social {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   grid-template-areas: ". . ." ". . ."; }
   .social__icon {
     position: relative;
@@ -90,7 +115,7 @@ body {
     width: 100%;
     height: 100%;
     text-align: center;
-    color: #fff;
+    color: #f4f3f4;
     -webkit-transition: all 0.35s;
     -moz-transition: all 0.35s;
     transition: all 0.35s;
@@ -98,7 +123,7 @@ body {
   .social__content i.fa,
   .social__content i.fab,
   .social__content .iconify {
-    color: #fff;
+    color: #f4f3f4;
     font-size: 45px; }
   .social__content img {
     height: 60px;
@@ -109,8 +134,64 @@ body {
     width: 100%;
     text-align: center;
     transform: translateY(-50%); }
+  .social__icon-github:hover .social__box {
+    background: #211f1f;
+    height: 100%; }
   .social__icon-twitter:hover .social__box {
     background: #32ccfe;
+    height: 100%; }
+  .social__icon-linkedin-in:hover .social__box {
+    background: #007bb5;
+    height: 100%; }
+  .social__icon-stack-overflow:hover .social__box {
+    background: #f48024;
+    height: 100%; }
+  .social__icon-codewars:hover .social__box {
+    background: #bb432c;
+    height: 100%; }
+
+.img {
+  position: relative; }
+  .img__item {
+    position: absolute;
+    top: 18%;
+    left: 20%;
+    background-position: center;
+    margin: 0 auto;
+    width: 80%;
+    height: 80%; }
+    .img__item img {
+      -webkit-box-shadow: 1px -2px 0px -4px rgba(0, 0, 0, 0.56);
+      -moz-box-shadow: 1px -2px 0px -4px rgba(0, 0, 0, 0.56);
+      box-shadow: 1px -2px 0px -4px rgba(0, 0, 0, 0.56); }
+
+.profile {
+  position: relative;
+  letter-spacing: 0.5px;
+  font-size: 1.4rem; }
+  .profile__text {
+    position: absolute;
+    top: 10%;
+    left: 11%;
+    width: 80%;
+    height: 80%;
+    line-height: 1.2; }
+  .profile__button {
+    letter-spacing: 1px;
+    position: absolute;
+    top: 80%;
+    left: 11%;
+    transform: scale(0.95); }
+
+.portfolio {
+  background: #111417;
+  padding-top: 120px;
+  border-bottom: 1px solid #15191d;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr); }
+  .portfolio__wrapper {
+    width: 100%;
     height: 100%; }
 
 .header {
@@ -121,6 +202,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start; }
+  .header__logo {
+    position: absolute;
+    top: 65px;
+    left: 65px;
+    width: 8rem;
+    height: 1.3rem;
+    font-size: 1.8rem;
+    font-weight: lighter; }
   .header__content {
     margin-left: 2rem; }
 
