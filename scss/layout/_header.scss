@@ -17,20 +17,20 @@
     font-weight: lighter;
   }
 
-  &__text {
+  // &__text {
     
-    h1:after {
-      position: absolute;
-      content: '';
-      width: 40px;
-      height: 4px;
-      background:$third-color;
-      top: 4.8em;
-      left: 1.3em;
-      right: auto;
-      bottom: -20px;
-    }
-  }
+  //   h1:after {
+  //     position: absolute;
+  //     content: '';
+  //     width: 40px;
+  //     height: 4px;
+  //     background:$third-color;
+  //     top: 4.8em;
+  //     left: 1.3em;
+  //     right: auto;
+  //     bottom: -20px;
+  //   }
+  // }
   
   &__content {
     margin-left: 3rem;

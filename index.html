@@ -97,6 +97,10 @@
             <div class="img__item">
               <img src="/img/rsz_profile-pic.jpg" alt="profile-pic" />
             </div>
+            <div class="heading">
+              <h2>Most ricent works</h2>
+              <i class="fas fa-angle-double-down"></i>
+            </div>
           </section>
 
           <!-- Content Box Profile -->
@@ -300,45 +304,73 @@
             </div>-->
           </section>
           
-          <section class="box"></section>
-
-          <section class="box-contrnt box-contact-info">
-						<div class="flex-box no-gutter">
-							<div class="col-sm-12">
-								<div class="contact-info">
-									<!-- Show Info Button -->
-									<a href="#" class="show-info-link"><i class="fa fa-info"></i> Show info</a>
-									<!-- <div id="map" style="height: 550px;"></div> -->
-									<address class="contact-info-wrapper pd-exlarge-sm pd-large-xs">
-										<ul class="list-unstyled">
-											<li class="contact-group">
-											  <span class="adr-heading">Address</span>
-											  <span class="adr-info"></span>
-											</li>
-											<li class="contact-group">
-											  <span class="adr-heading">Email</span>
-											  <span class="adr-info"></span>
-											</li>
-                    </ul>
-                    
-										<ul class="list-unstyled">
-											<li class="contact-group">
-											  <span class="adr-heading"></span>
-											  <span class="adr-info"></span>
-											</li>
-											<li class="contact-group">
-											  <span class="adr-heading">Mobile</span>
-											  <span class="adr-info"></span>
-											</li>
-										</ul>                  
-										<a href="#" class="show-map"><i class="fa fa-map-o"></i> Show on map</a>
-									</address>
-								</div>
-							</div>
-						</div>
+          <section class="box">
+            <div class="heading">
+              <h2>Skills</h2>
+            </div>
           </section>
           
-          <section class="box"></section>
+          <section class="box contact">
+              <!-- Show Info Button -->
+              <!-- <a href="#" class="show__info-link"><i class="fa fa-info"></i> Show info</a> -->
+              <!-- <div id="map" style="height: 550px;"></div> -->
+            <div class="contact__wrapper">
+              <div class="contact__address">
+              <ul class="list-unstyled">
+                <li class="contact-group">
+                  <span class="adr-heading">Address</span>
+                  <span class="adr-info">Park street, Ashford</span>
+                </li>
+                <li class="contact-group">
+                  <span class="adr-heading">Email</span>
+                  <span class="adr-info">vihrogonov@yahoo.com</span>
+                </li>
+              </ul>
+              
+              <ul class="list-unstyled">
+                <li class="contact-group">
+                  <span class="adr-heading">154 The Panorama</span>
+                  <span class="adr-info">TN24 8EU</span>
+                </li>
+                <li class="contact-group">
+                  <span class="adr-heading">Mobile</span>
+                  <span class="adr-info">+44 7472445548</span>
+                </li>
+              </ul>  
+            </div>
+              <div>
+                <a href="#" class="show-map"><i class="fa fa-map-o"></i> Show on map</a>
+              </div>                
+            </div>
+          </section>
+          
+            <section class="box content">
+              <div class="contact-form">
+                <div class="heading">
+                  <h2>Contact</h2>
+                </div>
+                <form role="form" class="form" data-toggle="validator" >
+                  <!-- Name -->
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+                  </div>
+                  <!-- Email -->
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+                  </div>
+                  <!-- Message -->
+                  <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
+                  </div>
+                  <button type="submit" id="form-submit" class="btn btn-skin pull-right">Submit</button>
+                </form>
+              </div>
+            </section>
+
+         
 
       </div>
    
