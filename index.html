@@ -93,30 +93,28 @@
           </section>
 
           <!-- Content Box Image -->
-          <section class="box img">
-            <div class="img__item">
+          <section class="box profileImage">
+            <div class="profileImage__item">
               <img src="/img/rsz_profile-pic.jpg" alt="profile-pic" />
             </div>
-            <div class="heading">
-              <h2>Most ricent works</h2>
+            <!-- <div class="profileImage__heading-wrapper">
+              <h2 class="h2">Most ricent works</h2>
               <i class="fas fa-angle-double-down"></i>
-            </div>
+            </div> -->
           </section>
 
           <!-- Content Box Profile -->
-          <section class="box profile">
-            <div class="profile__text ">
-              <div class="profile__text-wrap">
-                <div class="heading">
+          <section class="box box-withPadding profile">
+            <div class="profile__text-wrap ">
+              <div class="profile__heading">
                   <h2>Portfolio</h2>
                 </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim lacinia. Morbi rutrum vulputate est sed faucibus.consectetur adipiscing elit. Aliquam viverra convallis auctor.Morbi rutrum vulputate est sed faucibus.consectetur adipiscing elit. Aliquam viverra convallis auctor.Morbi rutrum vulputate est sed faucibus.
+                <p class="profile__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim lacinia. Morbi rutrum vulputate est sed faucibus.consectetur adipiscing elit. Aliquam viverra convallis auctor.Morbi rutrum vulputate est sed faucibus.consectetur adipiscing elit. Aliquam viverra convallis auctor.Morbi rutrum vulputate est sed faucibus.Aliquam viverra convallis auctor.Morbi rutrum vulputate est sed faucibus.consecteturAliquam viverra convallis auctor.Morbi rutrum vulputate est sed faucibus.consectetur
                 </p>
-              </div>
             </div>
             <div class="profile__button">
-              <a class="button button--secondary"href="#">Download CV <i class="fas fa-download"></i></a>
+              <button class="button button--secondary"href="#">Download CV <i class="fas fa-download"></i></button>
             </div>
           </section>
 
@@ -304,37 +302,38 @@
             </div>-->
           </section>
           
-          <section class="box">
+          <section class="box box-withPadding">
             <div class="heading">
               <h2>Skills</h2>
+              <p>All my project can be found on <a href="#">GitHub</a></p>
             </div>
           </section>
           
-          <section class="box contact">
+          <section class="box box-withPadding contact__details">
               <!-- Show Info Button -->
               <!-- <a href="#" class="show__info-link"><i class="fa fa-info"></i> Show info</a> -->
               <!-- <div id="map" style="height: 550px;"></div> -->
             <div class="contact__wrapper">
               <div class="contact__address">
-              <ul class="list-unstyled">
-                <li class="contact-group">
-                  <span class="adr-heading">Address</span>
-                  <span class="adr-info">Park street, Ashford</span>
+              <ul class="contact__address-sub list-unstyled">
+                <li class="contact__group">
+                  <span class="contact__heading">Address</span>
+                  <span class="contact__info">Park street, Ashford</span>
                 </li>
-                <li class="contact-group">
-                  <span class="adr-heading">Email</span>
-                  <span class="adr-info">vihrogonov@yahoo.com</span>
+                <li class="contact__group">
+                  <span class="contact__heading">Email</span>
+                  <span class="contact__info">vihrogonov@yahoo.com</span>
                 </li>
               </ul>
               
-              <ul class="list-unstyled">
-                <li class="contact-group">
-                  <span class="adr-heading">154 The Panorama</span>
-                  <span class="adr-info">TN24 8EU</span>
+              <ul class="contact__address-sub list-unstyled">
+                <li class="contact__group">
+                  <span class="contact__heading">154 The Panorama</span>
+                  <span class="contact__info">TN24 8EU</span>
                 </li>
-                <li class="contact-group">
-                  <span class="adr-heading">Mobile</span>
-                  <span class="adr-info">+44 7472445548</span>
+                <li class="contact__group">
+                  <span class="contact__heading">Mobile</span>
+                  <span class="contact__info">+44 7472445548</span>
                 </li>
               </ul>  
             </div>
@@ -344,34 +343,32 @@
             </div>
           </section>
           
-            <section class="box content">
-              <div class="contact-form">
-                <div class="heading">
-                  <h2>Contact</h2>
-                </div>
-                <form role="form" class="form" data-toggle="validator" >
-                  <!-- Name -->
-                  <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
-                  </div>
-                  <!-- Email -->
-                  <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
-                  </div>
-                  <!-- Message -->
-                  <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea class="form-control" name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
-                  </div>
-                  <button type="submit" id="form-submit" class="btn btn-skin pull-right">Submit</button>
-                </form>
+          <section class="box box-withPadding">
+          
+            <div class="contact__form">
+              <div class="heading">
+                <h2>Contact</h2>
               </div>
-            </section>
-
-         
-
+              <form role="form" class="form" data-toggle="validator" >
+                <!-- Name -->
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+                </div>
+                <!-- Email -->
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+                <!-- Message -->
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea class="form-control" name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" id="form-submit" class="button button--secondary">Submit</button>
+              </form>
+            </div>
+          </section>
       </div>
    
       <footer class="footer">

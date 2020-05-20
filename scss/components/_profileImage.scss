@@ -1,0 +1,23 @@
+.profileImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  &__item {
+    margin-top: 35px;
+    img {
+      width: 350px;
+      height: 350px;
+      border: 5px inset $third-color;
+      border-radius: 30px 10px 30px 10px;
+    }  
+  }
+
+
+  &__heading-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+  }
+}
