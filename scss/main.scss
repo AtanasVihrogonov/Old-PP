@@ -1,13 +1,12 @@
 
 // IMPORTS
 @import 'base/variables.scss';  // colors, fonts etc...
-// @import 'partials/mixins.scss'; // custom mixins
+@import 'partials/mixins.scss'; // custom mixins
 
 @import 'base/base'; // base
 @import 'base/typography'; // typography
 @import 'base/utilities'; // utilities
 
-@import 'components/images'; // images
 @import 'components/buttons'; // menu button
 @import 'components/social'; // social media style
 @import 'components/profile'; //
@@ -17,12 +16,12 @@
 
 @import 'components/skills';
 
-// @import 'components/main'; // main
 // @import 'components/boxes'; // boxes
 // @import 'components/popup'; // popup
 
 @import 'layout/header'; // menu buttons
 @import 'layout/footer'; // footer
+
 
 
 

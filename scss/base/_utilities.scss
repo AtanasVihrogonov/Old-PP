@@ -2,11 +2,14 @@
   padding-top: 1px;
   &__content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    
     grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 30px;
     grid-row-gap: 30px;
     margin: 30px;
+    @media screen and (min-width: 1024px){
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 }
 
@@ -28,4 +31,9 @@
   margin: 1.2rem 0;
 }
 
+.profile__heading,
+.skills__heading,
+.heading {
+  margin-bottom: 2rem;
+}
  

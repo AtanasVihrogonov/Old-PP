@@ -33,33 +33,27 @@
     padding: 7px 0 7px 20px;
     border-left: 1px solid #666;
   }
-
   &__heading {
     color: $secondary-color;
     display: block;
     font-size: 16px;
   }
-
   &__info {
     font-size: 12px;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     color: #888;
   }
-
   &__address {
     display: flex;
     &-sub {
       width: 50%;
     }
   }
-
   &__form {
     margin-top: 2rem;
     font-size: 1rem;
     margin: 0 auto;
-    .heading {
-      margin-bottom: 3rem;
-    }
   }
 }
+

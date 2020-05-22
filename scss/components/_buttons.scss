@@ -33,7 +33,6 @@
     color: $secondary-color;
     background-color:$primary-color;
   }
-
   &--primary {
     transition: all ease-in-out .3s;
     color:  $primary-color;
@@ -52,6 +51,21 @@
   background-image: none;
   box-shadow: none;
   outline: 0 none;
+}
+
+.contact__details {
+  .show__info-link {
+    color: $primary-color;
+    text-decoration: none;
+  }
+  .show__info-link i {
+    display: inline-block;
+    padding-top: 18px;
+    padding-right: 15px;
+  }
+  .show__info-link:hover {
+    background-color: $secondary-color;
+  }
 }
 
 
