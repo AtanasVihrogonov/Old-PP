@@ -23,7 +23,7 @@
         height: 100%
       }
       img:hover {
-        opacity: 0.5;
+        opacity: 0.8;
         // transform: scale(1.1);
         // opacity: 1;
       }
@@ -38,21 +38,27 @@
           // margin: 1rem;
           h5 {
             letter-spacing: 2px;
+            font-weight: 400;
             color: $secondary-color;
             text-transform: uppercase;
+            margin: 0.2rem;
           }
           p {
             color: #8A8A8A;
             font-size: 0.9rem;
           }
         }
-
       }
 
       .link-icon {
         font-size: 0.7rem;
         color: $secondary-color;
+        padding-bottom: 5rem;
+        i {
+          padding-top: 1.4rem;
+        }
       }
+
     }
 
     &-item:hover {
@@ -65,14 +71,13 @@
         right: 0;
         flex-direction: column;
         bottom: 0;
-        background: rgba(0, 0, 0, 0.7);
+        background: rgba(0, 0, 0, 0.85);
         position: absolute;
         justify-content: center;
         align-items:center;
+        
       }
     }
-
-
 
     /* media queries - portfolio */
     @media only screen and (max-width:1300px) {
@@ -86,5 +91,8 @@
   }
 
 }
+
+
+
 
 
