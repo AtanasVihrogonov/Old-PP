@@ -45,8 +45,8 @@
   }
 
   &__content img {
-    height: 60px;
-    width: 60px;
+    height: 45px;
+    width: 45px;
   }
 
   &__content {
@@ -87,7 +87,21 @@
       height: 100%;
     }
   }
+  &__icon-sololearn:hover {
+    .social__box {
+      background: #969394;
+      height: 100%;
+    }
+  }
 }
+
+
+
+
+
+
+
+
 
 
 

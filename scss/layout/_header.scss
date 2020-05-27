@@ -1,5 +1,5 @@
 .header {
-  font-family: 'Crimson Text', serif;
+  //font-family: 'Crimson Text', serif;
   background-size: cover;
   background-image: url(/img/image1.jpg);
   background-repeat: no-repeat;
@@ -9,8 +9,7 @@
   justify-content: flex-start;
 
   &__logo {
-    font-family: 'Bigshot One', cursive;
-    //font-family: 'Kaushan Script', cursive;
+    font-family: 'El Messiri', sans-serif;
     position: absolute;
     top: 75px;
     left: 85px;

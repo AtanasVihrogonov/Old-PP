@@ -1,11 +1,22 @@
+.modal {
+  position:fixed;
+  top:0;
+  left:0;
+  background:rgba(0,0,0,0.8);
+  z-index:5;
+  width:100%;
+  height:100%;
+}
 
 .popup-modal {
-  max-width: 550px;
   background-color: $secondary-color;
   font-family: 'Lato', sans-serif;
-  position: relative;
-  margin: 0 auto;
+  max-width: 550px;
   color: $third-color;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 
   .media img {
     width: 100%;
@@ -61,7 +72,6 @@
       font-weight: 500;
       line-height: 2.2rem;
       font-size: 0.7rem;
-
     }
     .btn:hover {
       background-color: $third-color;
@@ -69,6 +79,7 @@
     }
   }
 }
+
 
 
 
