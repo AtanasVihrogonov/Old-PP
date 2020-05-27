@@ -1,46 +1,28 @@
-/*
- *  Primary style
- */
- *,
- *::before,
- *::after {
-   box-sizing: inherit;
-   margin: 0;
-   padding: 0;
- }
+/* Primary style */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
  
- html {
-   box-sizing: border-box;
- 
-   //This defines what 1rem is
-   // font-size: 62.5%;     // 1 rem = 10px, 10px/16px * 100 = 62.5%
- 
-  //  @include respond(tab-land) { // width < 1200?
-  //    font-size: 56.25%;    // 1 rem = 9px, 9px/16px * 100 = 56.25%
-  //  } 
- 
-  //  @include respond(tab-port) { // width < 900?
-  //    font-size: 50%;       // 1 rem = 8px, 8px/16px * 100 = 50%
-  //  }
- 
-  //  @include respond(bid-desktop) {
-  //    font-size: 75%;       // 1 rem = 12px, 12px/16px * 100 = 75%
-  //  }
- }
+html {
+  box-sizing: border-box;
+  //  This defines what 1rem is
+  // font-size: 62.5%;     // 1 rem = 10px, 10px/16px * 100 = 62.5%
 
- body {
-  font-family: 'Montserrat', sans-serif;
-  //font-family: 'Crimson Text', serif;
-  font-family: 'Josefin+Slab', serif;
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  color: $primary-color;
-  background-color: $wrap-color;
-  line-height: 1.5rem;
-  hyphens: auto;
-  overflow-wrap: break-word;
-  box-shadow: #111;
-  text-rendering: optimizeLegibility;
+  // @include respond(tab-land) { // width < 1200?
+  //   font-size: 56.25%;    // 1 rem = 9px, 9px/16px * 100 = 56.25%
+  // } 
+
+  // @include respond(tab-port) { // width < 900?
+  //   font-size: 50%;       // 1 rem = 8px, 8px/16px * 100 = 50%
+  // }
+
+  // @include respond(bid-desktop) {
+  //   font-size: 75%;       // 1 rem = 12px, 12px/16px * 100 = 75%
+  // }
 }
 
 label {
@@ -59,7 +41,6 @@ input, textarea {
 button {
   cursor: pointer;
 }
- 
 
  
 

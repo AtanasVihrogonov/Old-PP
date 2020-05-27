@@ -1,8 +1,8 @@
 
 // IMPORTS
-@import 'base/variables.scss';  // colors, fonts etc...
 @import 'partials/mixins.scss'; // custom mixins
 
+@import 'base/variables.scss';  // colors, fonts etc...
 @import 'base/base'; // base
 @import 'base/typography'; // typography
 @import 'base/utilities'; // utilities
@@ -12,11 +12,8 @@
 @import 'components/profile'; //
 @import 'components/profileImage'; //
 @import 'components/portfolio'; // 
-@import 'components/contact';
-
-@import 'components/skills';
-
-// @import 'components/boxes'; // boxes
+@import 'components/contact'; //
+@import 'components/skills'; //
 @import 'components/popup'; // popup
 
 @import 'layout/header'; // menu buttons
