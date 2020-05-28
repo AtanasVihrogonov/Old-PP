@@ -1,22 +1,32 @@
 .footer {
-  height: 100px;
+  position: relative;
   width: 100%;
   background-color:#f7f7f7;
-
-  &__container {
-    height: auto;
+  padding: 30px;
+  &__content {
+    letter-spacing: 2px;
     display: flex;
-    flex-direction: row-reverse;
     justify-content: space-between;
-    padding: 1.5rem 1rem 1.5rem 2rem;
     align-items: center;
-
-    &-info {
-      font-size: 0.9rem;
-      font-weight: bold;
+    font-size: 0.9rem;
+    font-weight: bold;
+    @include respond(phone) {
       letter-spacing: 1px;
+      padding: 10px;
+    }
+    .button {
+      margin: 0;
+      position: absolute;
+      top: -10px;
+      left: 49%;
+      @include respond(phone) {
+        left: 45%;
+      }
     }
   }
+  
+
+  
 }
 
 

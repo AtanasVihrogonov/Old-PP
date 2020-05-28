@@ -1,8 +1,6 @@
 
 .contact {
-  &__details {
-    background-color: $primary-color;
-  }
+  background-color: $primary-color;
 
   &__wrapper {
     display: flex;
@@ -14,6 +12,9 @@
     flex-wrap: wrap;
     flex-direction: column;
     padding: 0 30px;
+    @include respond(phone) {
+      padding: 0;
+    }
 
     .show-map {
       display: block;
@@ -23,7 +24,7 @@
         display: inline-block;
         padding-top: 18px;
         padding-right: 15px;
-        font-size: 22px;
+        font-size: 1.3rem;
       }
     }
   }
@@ -36,10 +37,10 @@
   &__heading {
     color: $secondary-color;
     display: block;
-    font-size: 16px;
+    font-size: 1rem;
   }
   &__info {
-    font-size: 12px;
+    font-size: 0.8rem;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     color: #888;
@@ -56,4 +57,5 @@
     margin: 0 auto;
   }
 }
+
 

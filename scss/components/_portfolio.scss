@@ -1,24 +1,16 @@
 .portfolio {
+  @include grid;
   &__wrapper {
-    width: 100%;
-    height: 550px;
-    display: flex;
-    flex-wrap: wrap;
-
     &-item {
-      position: relative;
+      width: 100%;
+      height: auto;
+      @include position-item;
       background: #111417;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
       text-align: center;
-      width: 33.33%;
-      height: 275px;
       cursor: pointer;
-
       img {
         width: 100%;
-        height: 100%;
+        height: auto;
         object-fit:cover;
         object-position: 50% 50%;
       }
@@ -49,6 +41,7 @@
             text-transform: uppercase;
             margin: 0.2rem;
           }
+
           p {
             color: #8A8A8A;
             font-size: 0.9rem;
@@ -81,12 +74,25 @@
       width: 100%;
       padding: 0;
     }
-    /* portfolio content */
-    &__wrapper {
-      margin-top: 2.25rem;
-    }
+  }
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "." "." "." "." "." ".";
+  }
+  /* portfolio content */
+   @include respond(phone) {
+    font-size: 1.2rem;
   }
 }
+
+
+
+
+
+
+
+
 
 
 

@@ -17,6 +17,10 @@
     height: 1.3rem;
     font-size: 1.8rem;
     font-weight: lighter;
+    @include respond(phone) {
+      top: 40px;
+      left: 40px;
+    }
   }
   
   &__content {
