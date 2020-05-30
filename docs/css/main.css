@@ -327,7 +327,7 @@ p {
         right: 0;
         bottom: 0;
         flex-direction: column;
-        background: rgba(0, 0, 0, 0.7);
+        background: rgba(0, 0, 0, 0.85);
         position: absolute;
         justify-content: center;
         align-items: center;
@@ -383,7 +383,9 @@ p {
     text-decoration: none;
     cursor: pointer; }
     .contact .show__info-link .fa-info {
-      padding-right: 0.5rem; }
+      padding-right: .5rem; }
+  .contact .show__info-link:hover {
+    color: red; }
   .contact .resp-iframe {
     width: 100%;
     height: 550px; }
@@ -605,10 +607,10 @@ p {
       text-transform: uppercase;
       letter-spacing: 3px;
       font-weight: 500;
-      line-height: 2.2rem;
-      font-size: 0.7rem; }
+      line-height: 3.2rem;
+      font-size: 0.85rem; }
     .popup-modal .popup-buttons .btn:hover {
-      background-color: #554f56;
+      background-color: #252525;
       transition: all ease-in-out .3s; }
 
 .header {

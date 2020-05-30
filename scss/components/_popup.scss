@@ -70,11 +70,11 @@
       text-transform: uppercase;
       letter-spacing: 3px;
       font-weight: 500;
-      line-height: 2.2rem;
-      font-size: 0.7rem;
+      line-height: 3.2rem;
+      font-size: 0.85rem;
     }
     .btn:hover {
-      background-color: $third-color;
+      background-color: $primary-color;
       transition: all ease-in-out .3s;
     }
   }
