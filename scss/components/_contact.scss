@@ -1,6 +1,28 @@
 
 .contact {
   background-color: $primary-color;
+  background-color: $wrap-color;
+  overflow: hidden;
+  padding: 0;
+
+  
+
+  .show__info-link {
+    font-size: .9rem;
+    padding: 0.5rem;
+    color: $primary-color;
+    text-decoration: none;
+    cursor: pointer;
+    .fa-info {
+      padding-right: 0.5rem;
+    }
+  }
+
+  .resp-iframe {
+    width: 100%;
+    height: 550px;
+  }
+ 
 
   &__wrapper {
     display: flex;
@@ -34,28 +56,41 @@
     padding: 7px 0 7px 20px;
     border-left: 1px solid #666;
   }
+
   &__heading {
     color: $secondary-color;
     display: block;
     font-size: 1rem;
   }
+  
   &__info {
     font-size: 0.8rem;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     color: #888;
   }
+
   &__address {
     display: flex;
+    padding-bottom: 8rem;
     &-sub {
       width: 50%;
     }
   }
+
   &__form {
     margin-top: 2rem;
     font-size: 1rem;
     margin: 0 auto;
   }
 }
+
+
+
+
+
+
+
+
 
 

@@ -4,11 +4,14 @@
   justify-content: center;
   flex-direction: column;
   padding: 6rem 3rem 3rem;
+  
   &__item {
     height: 70%;
+
     @include respond(phone) {
       height: 250px;
     }
+
     img {
       width: auto;
       height: 100%;
@@ -18,11 +21,9 @@
     }  
   }
 
-
   &__heading-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    
   }
 }

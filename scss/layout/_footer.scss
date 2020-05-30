@@ -19,6 +19,9 @@
       position: absolute;
       top: -10px;
       left: 49%;
+      @media only screen and (min-width:1400px) {
+        left: 49.5%
+      }
       @include respond(phone) {
         left: 45%;
       }

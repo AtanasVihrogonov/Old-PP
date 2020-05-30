@@ -1,9 +1,11 @@
 .social {
   @include grid;
+  
   @include respond(phone) {
    @include grid-sm;
    font-size: 10px;
   }
+
   &__icon {
     @include position-item;
     margin: auto;
@@ -42,7 +44,6 @@
     @include respond(phone) {
      font-size: 25px;
     }
-
   }
 
   &__content img {
@@ -50,8 +51,8 @@
     width: 45px;
     @include respond(phone) {
       height: 25px;
-    width: 25px;
-     }
+      width: 25px;
+    }
   }
 
   &__content {
@@ -62,44 +63,42 @@
     transform: translateY(-50%);
   }
 
+  .social__box {
+    height: 100%;
+  }
+
   &__icon-github:hover {
     .social__box {
       background: #211f1f;
-      height: 100%;
     }
   }
   &__icon-twitter:hover {
     .social__box {
       background: #32ccfe;
-      height: 100%;
     }
   }
   &__icon-linkedin-in:hover {
     .social__box {
       background: #007bb5;
-      height: 100%;
-    }
+   }
   }
   &__icon-stack-overflow:hover {
     .social__box {
       background: #f48024;
-      height: 100%;
     }
   }
   &__icon-codewars:hover {
     .social__box {
       background: #bb432c;
-      height: 100%;
     }
   }
   &__icon-sololearn:hover {
     .social__box {
       background: #969394;
-      height: 100%;
     }
   }
- 
 }
+
 
 
 

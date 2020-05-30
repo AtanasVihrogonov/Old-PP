@@ -22,8 +22,12 @@
   width: 100%;
   max-height: 550px;
   @include respond(phone) {
-      max-height: 1110px;
+    max-height: 1110px;
   }
+  @media only screen and (min-width: 601px) and (max-width: 1023px){
+    height: 550px;
+  }
+
   &-withPadding {
     padding: 3rem;
   }
@@ -49,6 +53,12 @@
 
 
  
+
+
+
+
+
+
 
 
 

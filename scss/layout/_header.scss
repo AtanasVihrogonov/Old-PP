@@ -1,5 +1,4 @@
 .header {
-  //font-family: 'Crimson Text', serif;
   background-size: cover;
   background-image: url(/img/image1.jpg);
   background-repeat: no-repeat;
@@ -17,7 +16,11 @@
     height: 1.3rem;
     font-size: 1.8rem;
     font-weight: lighter;
-    @include respond(phone) {
+    @include respond(tab-port) {
+      top: 60px;
+      left: 60px;
+    }
+    @media only screen and (min-width: 300px) and (max-width: 600px){
       top: 40px;
       left: 40px;
     }
