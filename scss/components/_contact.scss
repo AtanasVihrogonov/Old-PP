@@ -1,14 +1,12 @@
 
 .contact {
   background-color: $primary-color;
-  background-color: $wrap-color;
   overflow: hidden;
   padding: 0;
-
   
-
   .show__info-link {
     font-size: .9rem;
+    display: none;
     padding: 0.5rem;
     color: $primary-color;
     text-decoration: none;
@@ -23,6 +21,12 @@
   }
 
   .resp-iframe {
+    display: none;
+  }
+
+  // generate from JS
+  .show-resp-iframe {
+    transition: transform 0.2s easein-in-out;
     width: 100%;
     height: 550px;
   }
@@ -45,6 +49,10 @@
       display: block;
       bottom: 1px;
       color: $secondary-color;
+      font-size: .9rem;
+      text-decoration: none;
+      cursor: pointer;
+
       i {
         display: inline-block;
         padding-top: 18px;
@@ -76,6 +84,9 @@
   &__address {
     display: flex;
     padding-bottom: 8rem;
+    @include respond(phone) {
+      padding-bottom: 0;
+    }
     &-sub {
       width: 50%;
     }
@@ -85,8 +96,27 @@
     margin-top: 2rem;
     font-size: 1rem;
     margin: 0 auto;
+    .alert {
+      text-align: center;
+      padding: 10px;
+      background-color: #79c879;
+      color: #fff;
+      margin-bottom: 0.5rem;
+      display: none;
+    }
   }
 }
+
+// generate from JS
+.contact.active {
+  background-color: $wrap-color;
+  .show__info-link {
+    display: block;
+  }
+}
+
+
+
 
 
 

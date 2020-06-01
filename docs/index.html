@@ -126,10 +126,10 @@
               faucibus.consectetur</p>
           </div>
           <div class="profile__button">
-            <button class="button button--secondary" href="#">
+            <a class="button button--secondary" href="./css-box-model.pdf" target="_blank">
               Download CV
               <i class="fas fa-download"></i>
-            </button>
+            </a>
           </div>
         </section>
         
@@ -183,11 +183,11 @@
         ====================================================== -->
         <section class="box box-withPadding contact">
           <!-- Show Info Button -->
-          <a href="#" class="show__info-link">
+          <a class="show__info-link">
             <i class="fa fa-info"></i> Show info
           </a>
           <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2502.738458738329!2d0.872804515930309!3d51.1501739445795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47deda435e39997f%3A0xb8c2393cc0785f20!2sThe%20Panorama%2C%20130%20Park%20St%2C%20Ashford%20TN24%208EZ!5e0!3m2!1sen!2suk!4v1590838855772!5m2!1sen!2suk" class="resp-iframe" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2502.738458738329!2d0.872804515930309!3d51.1501739445795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47deda435e39997f%3A0xb8c2393cc0785f20!2sThe%20Panorama%2C%20130%20Park%20St%2C%20Ashford%20TN24%208EZ!5e0!3m2!1sen!2suk!4v1590838855772!5m2!1sen!2suk" class="resp-iframe " frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
           </iframe>
           <div class="contact__wrapper">
             <div class="contact__address">
@@ -213,7 +213,7 @@
               </ul>
             </div>
             <div>
-              <a href="#" class="show-map"><i class="fa fa-map-o"></i> Show on map</a>
+              <a class="show-map"><i class="fa fa-map"></i> Show on map</a>
             </div>
           </div>
         </section>
@@ -225,23 +225,24 @@
             <div class="heading">
               <h2>Contact</h2>
             </div>
-            <form role="form" class="form" data-toggle="validator">
+            <div class="alert">Your message has been sent.</div>
+            <form  role="form" id="contactForm" class="form" data-toggle="validator" >
               <!-- Name -->
               <div class="form-group">
                 <label for="name">Name</label>
-                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required/>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" />
               </div>
               <!-- Email -->
               <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required/>
+                <input type="text" name="email" id="email" class="form-control" placeholder="Enter your email" />
               </div>
               <!-- Message -->
               <div class="form-group">
                 <label for="message">Message</label>
-                <textarea class="form-control" name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
+                <textarea class="form-control" name="message" id="message" rows="5" placeholder="Your Message"></textarea>
               </div>
-              <button type="submit" id="form-submit" class="button button--secondary">Submit</button>
+              <button type="submit" id="submit" class="button button--secondary">Submit</button>
             </form>
           </div>
         </section>
@@ -258,6 +259,18 @@
           </div>
       </footer>
     </div>
+   
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-firestore.js"></script>
+    
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-analytics.js"></script> -->
+    <script src="./js/app.js"></script>
+    
     <script src="./js/script.js"></script>
+
+
   </body>
 </html>

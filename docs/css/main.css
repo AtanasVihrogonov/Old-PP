@@ -51,19 +51,19 @@ button {
   cursor: pointer; }
 
 body {
-  font-family: 'Maitree', serif;
+  background-color: #dfe1e0;
+  color: #252525;
+  font-family: "Maitree", sans-serif;
   font-size: 1.1rem;
   font-weight: 500;
   font-style: normal;
-  color: #252525;
-  background-color: #dfe1e0;
   line-height: 1.75rem;
   overflow-wrap: break-word;
   text-rendering: optimizeLegibility; }
 
 /* Headings */
 h1 {
-  font-family: 'Crimson Text', serif;
+  font-family: "Crimson Text", serif;
   font-weight: 200;
   letter-spacing: 1px;
   font-size: 4rem;
@@ -76,7 +76,7 @@ h2 {
   line-height: 1.5rem; }
 
 h3 {
-  font-family: 'Linden Hill', serif;
+  font-family: "Linden Hill", serif;
   margin: 0;
   font-weight: 400;
   font-size: 2.1rem;
@@ -134,7 +134,7 @@ p {
   margin-top: 20px; }
 
 .button {
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   font-size: .9rem;
   border-radius: 0;
   outline: none;
@@ -373,11 +373,11 @@ p {
 
 .contact {
   background-color: #252525;
-  background-color: #dfe1e0;
   overflow: hidden;
   padding: 0; }
   .contact .show__info-link {
     font-size: .9rem;
+    display: none;
     padding: 0.5rem;
     color: #252525;
     text-decoration: none;
@@ -387,6 +387,9 @@ p {
   .contact .show__info-link:hover {
     color: red; }
   .contact .resp-iframe {
+    display: none; }
+  .contact .show-resp-iframe {
+    transition: transform 0.2s easein-in-out;
     width: 100%;
     height: 550px; }
   .contact__wrapper {
@@ -405,7 +408,10 @@ p {
     .contact__wrapper .show-map {
       display: block;
       bottom: 1px;
-      color: #fff; }
+      color: #fff;
+      font-size: .9rem;
+      text-decoration: none;
+      cursor: pointer; }
       .contact__wrapper .show-map i {
         display: inline-block;
         padding-top: 18px;
@@ -427,12 +433,27 @@ p {
   .contact__address {
     display: flex;
     padding-bottom: 8rem; }
+    @media only screen and (max-width: 37.5em) {
+      .contact__address {
+        padding-bottom: 0; } }
     .contact__address-sub {
       width: 50%; }
   .contact__form {
     margin-top: 2rem;
     font-size: 1rem;
     margin: 0 auto; }
+    .contact__form .alert {
+      text-align: center;
+      padding: 10px;
+      background-color: #79c879;
+      color: #fff;
+      margin-bottom: 0.5rem;
+      display: none; }
+
+.contact.active {
+  background-color: #dfe1e0; }
+  .contact.active .show__info-link {
+    display: block; }
 
 .skills {
   display: flex;
@@ -602,6 +623,8 @@ p {
       width: 50%;
       background: #000000;
       outline: none;
+      text-decoration: none;
+      text-align: center;
       color: #fff;
       border: none;
       text-transform: uppercase;
@@ -610,7 +633,7 @@ p {
       line-height: 3.2rem;
       font-size: 0.85rem; }
     .popup-modal .popup-buttons .btn:hover {
-      background-color: #252525;
+      background-color: #554f56;
       transition: all ease-in-out .3s; }
 
 .header {
@@ -622,7 +645,7 @@ p {
   align-items: center;
   justify-content: flex-start; }
   .header__logo {
-    font-family: 'El Messiri', sans-serif;
+    font-family: "El Messiri", sans-serif;
     position: absolute;
     top: 75px;
     left: 85px;

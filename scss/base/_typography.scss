@@ -1,10 +1,10 @@
 body {
-  font-family: 'Maitree', serif;
+  background-color: $wrap-color;
+  color: $primary-color;
+  font-family: $font-primary;
   font-size: 1.1rem;
   font-weight: 500;
   font-style: normal;
-  color: $primary-color;
-  background-color: $wrap-color;
   line-height: 1.75rem;
   overflow-wrap: break-word;
   text-rendering: optimizeLegibility;
@@ -12,7 +12,7 @@ body {
 
 /* Headings */
 h1 {
-  font-family: 'Crimson Text', serif;
+  font-family: $font-headings;
   font-weight: 200;
   letter-spacing: 1px;
   font-size: 4rem;
@@ -27,7 +27,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'Linden Hill', serif;
+  font-family:$font-headings-sub;
   margin: 0;
   font-weight: 400;
   font-size: 2.1rem;
@@ -36,10 +36,8 @@ h3 {
 }
 
 p {
-  // font-family: 'Roboto', sans-serif;
   letter-spacing: 0.4px;
   font-size: 1.2rem;
-  // font-weight: 400;
   line-height: 1.6;
 }
 

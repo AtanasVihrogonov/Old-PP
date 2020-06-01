@@ -65,6 +65,8 @@
       width: 50%;
       background: #000000;
       outline: none;
+      text-decoration: none;
+      text-align: center;
       color: $secondary-color;
       border: none;
       text-transform: uppercase;
@@ -74,11 +76,12 @@
       font-size: 0.85rem;
     }
     .btn:hover {
-      background-color: $primary-color;
+      background-color: $third-color;
       transition: all ease-in-out .3s;
     }
   }
 }
+
 
 
 

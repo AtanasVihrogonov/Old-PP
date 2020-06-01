@@ -1,3 +1,4 @@
+// Portfolio data
 const portfolioData = [ 
   {
     id: "1",
@@ -55,13 +56,14 @@ const portfolioData = [
   }
 ];
 
+// Button close functionality
 const closeModal = () => {
   const body = document.querySelector('body')
   const modal =  document.querySelector('.modal');
   body.removeChild(modal)
 }
 
-
+// Portfolio Item
 const onClickPortfolioItem = event => {
  
   const body = document.querySelector('body');
@@ -70,6 +72,7 @@ const onClickPortfolioItem = event => {
   const modal = document.createElement("div");
   modal.setAttribute('class', 'modal');
   
+  // Create modal template
   const template = `
     <div class="popup-modal">
       <div class="media">
@@ -81,12 +84,12 @@ const onClickPortfolioItem = event => {
         ${clickedProjectData.projectDescription}
         </p>
         <span class="categories">
-          <a class="effect" href="${clickedProjectData.projectSourceCodeURL}">source code</a>
+          <a class="effect" href="${clickedProjectData.projectSourceCodeURL}" target="_blank">source code</a>
           <i class="fas fa-angle-right"></i>
         </span>
       </div>
       <div class="popup-buttons">
-        <button onclick='window.location.href="${clickedProjectData.projectliveURL}"' class="btn btn-view">View</button>
+        <a href="${clickedProjectData.projectliveURL}" target="_blank" class="btn btn-view">View</a>
         <button id="closeModalButton" class="btn btn-dismiss">Close</button>         
       </div>
     </div>
@@ -97,7 +100,7 @@ const onClickPortfolioItem = event => {
   closeModalButton.addEventListener('click', closeModal);
 }
 
-const onPageLoad = () => {
+const renderPortfolioSectionHandler = () => {
   const portfolioSection = document.querySelector('#portfolio');
 
   const portfolioContent = portfolioData.map(item => {
@@ -126,4 +129,29 @@ const onPageLoad = () => {
   );
 }
 
+// Showmap & info
+const toogleMapInfoHandler = () => {
+  const contact = document.querySelector('.contact');
+  const iframe = document.querySelector('.resp-iframe');
+  const showMap = document.querySelector('.show-map');
+  const showInfo = document.querySelector('.show__info-link');
+  showMap.addEventListener('click', (e) => {
+    contact.classList.add('active');
+    iframe.classList.remove('resp-iframe');
+    iframe.classList.add('show-resp-iframe');
+  });
+  showInfo.addEventListener('click', (e) => {
+    contact.classList.remove('active');
+    iframe.classList.add('resp-iframe');
+    iframe.classList.remove('show-resp-iframe');
+  });
+ }
+
+const onPageLoad = () => {
+  renderPortfolioSectionHandler();
+  toogleMapInfoHandler()
+}
+
 window.addEventListener('DOMContentLoaded', onPageLoad);
+
+

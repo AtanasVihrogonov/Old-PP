@@ -19,17 +19,17 @@
 @import 'layout/header'; // menu buttons
 @import 'layout/footer'; // footer
 
-// Logo 
+// Logo => $font-logo
 @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@600;700&display=swap');
 
-// Headings
+// Headings => $font-secondary
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Linden+Hill:ital@0;1&display=swap');
 
-// Body
+// Body => $font-primary
 @import url('https://fonts.googleapis.com/css2?family=Maitree:wght@400;500&display=swap');
 
-// Buttons
+// Buttons => $font-buttons
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,600;1,700;1,800&family=Maitree:wght@400;500&display=swap');
 
 
