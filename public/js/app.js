@@ -16,48 +16,48 @@
 // var firestore = firebase.firestore();
 
 // Start grabbing DOM Element
-// const submitBtn = document.querySelector('#submit');
+const submitBtn = document.querySelector('#submit');
 
-// let name = document.querySelector('#name');
-// let email = document.querySelector('#email');
-// let message = document.querySelector('#message');
+let name = document.querySelector('#name');
+let email = document.querySelector('#email');
+let message = document.querySelector('#message');
 
-// const db = firestore.collection('contactData');
+const db = firestore.collection('contactData');
 
-// submitBtn.addEventListener('click', function(e) {
-//   let nameInput = name.value;
-//   let emailInput = email.value;
-//   let messageInput = message.value;
+submitBtn.addEventListener('click', function(e) {
+  let nameInput = name.value;
+  let emailInput = email.value;
+  let messageInput = message.value;
 
-//   if(nameInput && emailInput && messageInput) {
-//   e.preventDefault()
+  if(nameInput && emailInput && messageInput) {
+  e.preventDefault()
 
-//     // Access the Database Collection
-//     db.doc()
-//     .set({
-//       name: nameInput,
-//       email: emailInput,
-//       message: messageInput
-//     })
-//     .then(function() {
-//     console.log('Data Saved');
-//     })
-//     .catch(function(error){
-//     console.log(error);
-//     });
+    // Access the Database Collection
+    db.doc()
+    .set({
+      name: nameInput,
+      email: emailInput,
+      message: messageInput
+    })
+    .then(function() {
+    console.log('Data Saved');
+    })
+    .catch(function(error){
+    console.log(error);
+    });
 
-//     // Show alert
-//     document.querySelector('.alert').style.display = 'block';
+    // Show alert
+    document.querySelector('.alert').style.display = 'block';
 
-//     // Hide alert after 3s
-//     setTimeout(function(){
-//     document.querySelector('.alert').style.display = 'none';
-//     }, 3000);
+    // Hide alert after 3s
+    setTimeout(function(){
+    document.querySelector('.alert').style.display = 'none';
+    }, 3000);
 
-//     // Clear Form
-//     document.getElementById('contactForm').reset();
-//   }
-// });
+    // Clear Form
+    document.getElementById('contactForm').reset();
+  }
+});
     
 
 
