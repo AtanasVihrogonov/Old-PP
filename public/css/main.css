@@ -638,7 +638,7 @@ p {
 
 .header {
   background-size: cover;
-  background-image: url(/img/image1.jpg);
+  background-image: url(./img/image1.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   display: flex;
