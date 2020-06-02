@@ -226,21 +226,21 @@
               <h2>Contact</h2>
             </div>
             <div class="alert">Your message has been sent.</div>
-            <form  role="form" id="contactForm" class="form" data-toggle="validator" >
+            <form  role="form" id="contactForm" class="form" data-toggle="validator">
               <!-- Name -->
               <div class="form-group">
                 <label for="name">Name</label>
-                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" />
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required/>
               </div>
               <!-- Email -->
               <div class="form-group">
                 <label for="email">Email</label>
-                <input type="text" name="email" id="email" class="form-control" placeholder="Enter your email" />
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required/>
               </div>
               <!-- Message -->
               <div class="form-group">
                 <label for="message">Message</label>
-                <textarea class="form-control" name="message" id="message" rows="5" placeholder="Your Message"></textarea>
+                <textarea class="form-control" name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
               </div>
               <button type="submit" id="submit" class="button button--secondary">Submit</button>
             </form>
