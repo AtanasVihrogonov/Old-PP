@@ -1,19 +1,19 @@
-// // Used to Grab on to Firebase -> Connection
-// var firebaseConfig = {
-//   apiKey: "AIzaSyBm63HPdyZv9gfsH7JBs--kyhNdYyawdOE",
-//   authDomain: "contactform-64d17.firebaseapp.com",
-//   databaseURL: "https://contactform-64d17.firebaseio.com",
-//   projectId: "contactform-64d17",
-//   storageBucket: "contactform-64d17.appspot.com",
-//   messagingSenderId: "456053601309",
-//   appId: "1:456053601309:web:da1586ad492f17e2b442f4",
-//   measurementId: "G-HCKYEW4FR1"
-// };
+// Used to Grab on to Firebase -> Connection
+var firebaseConfig = {
+  apiKey: "AIzaSyBm63HPdyZv9gfsH7JBs--kyhNdYyawdOE",
+  authDomain: "contactform-64d17.firebaseapp.com",
+  databaseURL: "https://contactform-64d17.firebaseio.com",
+  projectId: "contactform-64d17",
+  storageBucket: "contactform-64d17.appspot.com",
+  messagingSenderId: "456053601309",
+  appId: "1:456053601309:web:da1586ad492f17e2b442f4",
+  measurementId: "G-HCKYEW4FR1"
+};
 
 
-// // Init Firebase
-// firebase.initializeApp(firebaseConfig);
-// var firestore = firebase.firestore();
+// Init Firebase
+firebase.initializeApp(firebaseConfig);
+var firestore = firebase.firestore();
 
 // Start grabbing DOM Element
 const submitBtn = document.querySelector('#submit');
