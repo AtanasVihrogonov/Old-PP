@@ -699,7 +699,7 @@ p {
       left: 49%; }
       @media only screen and (min-width: 1400px) {
         .footer__content .button {
-          left: 49.5%; } }
+          left: 49%; } }
       @media only screen and (max-width: 37.5em) {
         .footer__content .button {
           left: 45%; } }
