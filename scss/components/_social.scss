@@ -56,6 +56,15 @@
   }
 
   &__content {
+    .saylor-icon {
+      width: 60px;
+      @include respond(phone) {
+        width: 40px;
+      }
+    }
+  }  
+
+  &__content {
     position: absolute;
     top: 50%;
     width: 100%;
@@ -79,12 +88,12 @@
   }
   &__icon-linkedin-in:hover {
     .social__box {
-      background: #007bb5;
+      background: #0e76a8;
    }
   }
-  &__icon-stack-overflow:hover {
+  &__icon-saylor-academy:hover {
     .social__box {
-      background: #f48024;
+      background:#354a58;
     }
   }
   &__icon-codewars:hover {
@@ -98,29 +107,3 @@
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

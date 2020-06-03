@@ -1,5 +1,8 @@
 .wrap {
   padding-top: 1px;
+  // max-width: 1800px;
+  // margin: 0 auto;
+  
   &__content {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
@@ -13,6 +16,16 @@
       margin: 0;
       grid-template-rows: .5fr .1fr .2fr .3fr 1fr .5fr .3fr .3fr;
       grid-template-columns:  1fr;
+    }
+  }
+}
+@media screen and (min-width: 1800px) {
+  body {
+    background-color: $secondary-color;
+    max-width: 1800px;
+    margin: 0 auto;
+    .wrap {
+      background-color: $wrap-color;
     }
   }
 }
@@ -47,18 +60,3 @@
 .heading {
   margin-bottom: 2rem;
 }
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-

@@ -1,28 +1,24 @@
 .header {
   background-size: cover;
-  background-image: url(./img/image1.jpg);
+  background-image: url(../img/image1.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  position: relative;
 
   &__logo {
     font-family: $font-logo;
     position: absolute;
     top: 75px;
-    left: 85px;
+    left: 45px;
     width: 8rem;
     height: 1.3rem;
     font-size: 1.8rem;
     font-weight: lighter;
-    @include respond(tab-port) {
-      top: 60px;
-      left: 60px;
-    }
-    @media only screen and (min-width: 300px) and (max-width: 600px){
-      top: 40px;
-      left: 40px;
+    @media screen and (min-width: 1800px) and (max-width: 3028px){
+      display: block;
     }
   }
   
@@ -30,26 +26,3 @@
     margin-left: 3rem;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

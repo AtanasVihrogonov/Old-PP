@@ -46,7 +46,9 @@
         margin-bottom: 6rem;
         padding: 0;
         position: relative;
-
+        @include respond(tab-land) {
+          width: 100%;
+        }
         @include respond(phone) {
           width: 100%;
         }
@@ -78,8 +80,8 @@
             content: "";
           }
         }
-        .percent20 { width: 20%; }
-        .percent50  { width: 50%; }
+        .percent20 { width: 10%; }
+        .percent50  { width: 45%; }
       }
 
       & li strong {
@@ -125,12 +127,12 @@
     align-items: center;
     justify-content: space-around;
     width: 50%;
-    font-size: 3rem;
-    letter-spacing: 1rem;
+    font-size: 2.5rem;
+    letter-spacing: .4rem;
     margin-bottom: 3rem;
     
-    @media only screen and (min-width: 1200px) and (max-width: 1335px){
-      font-size: 2.4rem;
+    @media only screen and (min-width: 1200px) and (max-width: 1600px){
+      font-size: 2.1rem;
     }
     @include respond(tab-land) {
       width: 100%;
@@ -147,30 +149,3 @@
 .h4 {
   margin: 0 0 0.5rem 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

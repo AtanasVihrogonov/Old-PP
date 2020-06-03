@@ -105,6 +105,14 @@ p {
         grid-template-rows: .5fr .1fr .2fr .3fr 1fr .5fr .3fr .3fr;
         grid-template-columns: 1fr; } }
 
+@media screen and (min-width: 1800px) {
+  body {
+    background-color: #fff;
+    max-width: 1800px;
+    margin: 0 auto; }
+    body .wrap {
+      background-color: #dfe1e0; } }
+
 .box {
   background-color: #fff;
   width: 100%;
@@ -241,6 +249,11 @@ p {
       .social__content img {
         height: 25px;
         width: 25px; } }
+  .social__content .saylor-icon {
+    width: 60px; }
+    @media only screen and (max-width: 37.5em) {
+      .social__content .saylor-icon {
+        width: 40px; } }
   .social__content {
     position: absolute;
     top: 50%;
@@ -254,9 +267,9 @@ p {
   .social__icon-twitter:hover .social__box {
     background: #32ccfe; }
   .social__icon-linkedin-in:hover .social__box {
-    background: #007bb5; }
-  .social__icon-stack-overflow:hover .social__box {
-    background: #f48024; }
+    background: #0e76a8; }
+  .social__icon-saylor-academy:hover .social__box {
+    background: #354a58; }
   .social__icon-codewars:hover .social__box {
     background: #bb432c; }
   .social__icon-sololearn:hover .social__box {
@@ -492,6 +505,9 @@ p {
         margin-bottom: 6rem;
         padding: 0;
         position: relative; }
+        @media only screen and (max-width: 75em) {
+          .skills__container .skill-bars li {
+            width: 100%; } }
         @media only screen and (max-width: 37.5em) {
           .skills__container .skill-bars li {
             width: 100%; } }
@@ -520,9 +536,9 @@ p {
             border-top: 5px solid #252525;
             content: ""; }
         .skills__container .skill-bars li .percent20 {
-          width: 20%; }
+          width: 10%; }
         .skills__container .skill-bars li .percent50 {
-          width: 50%; }
+          width: 45%; }
       .skills__container .skill-bars li strong {
         position: absolute;
         left: 0;
@@ -553,12 +569,12 @@ p {
     align-items: center;
     justify-content: space-around;
     width: 50%;
-    font-size: 3rem;
-    letter-spacing: 1rem;
+    font-size: 2.5rem;
+    letter-spacing: .4rem;
     margin-bottom: 3rem; }
-    @media only screen and (min-width: 1200px) and (max-width: 1335px) {
+    @media only screen and (min-width: 1200px) and (max-width: 1600px) {
       .skills__icon-wrap {
-        font-size: 2.4rem; } }
+        font-size: 2.1rem; } }
     @media only screen and (max-width: 75em) {
       .skills__icon-wrap {
         width: 100%;
@@ -643,24 +659,20 @@ p {
   background-position: center center;
   display: flex;
   align-items: center;
-  justify-content: flex-start; }
+  justify-content: flex-start;
+  position: relative; }
   .header__logo {
     font-family: "El Messiri", sans-serif;
     position: absolute;
     top: 75px;
-    left: 85px;
+    left: 45px;
     width: 8rem;
     height: 1.3rem;
     font-size: 1.8rem;
     font-weight: lighter; }
-    @media only screen and (max-width: 56.25em) {
+    @media screen and (min-width: 1800px) and (max-width: 3028px) {
       .header__logo {
-        top: 60px;
-        left: 60px; } }
-    @media only screen and (min-width: 300px) and (max-width: 600px) {
-      .header__logo {
-        top: 40px;
-        left: 40px; } }
+        display: block; } }
   .header__content {
     margin-left: 3rem; }
 
