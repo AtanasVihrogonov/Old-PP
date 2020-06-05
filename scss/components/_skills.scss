@@ -132,7 +132,7 @@
     margin-bottom: 3rem;
     
     @media only screen and (min-width: 1200px) and (max-width: 1600px){
-      font-size: 2.1rem;
+      font-size: 1.5rem;
     }
     @include respond(tab-land) {
       width: 100%;
@@ -149,3 +149,4 @@
 .h4 {
   margin: 0 0 0.5rem 0;
 }
+
