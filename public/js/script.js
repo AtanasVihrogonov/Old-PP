@@ -32,7 +32,7 @@ const portfolioData = [
     projectName: 'Calorie Tracker',
     projectType: 'Front-End',
     projectDescription: 'Simple Tracalorie | Meal & Calorie Tracker',
-    projectImageURL: './img/projects/calorie.png',
+    projectImageURL: './img/projects/calorie-tracker.png',
     projectliveURL: 'https://atanasvihrogonov.github.io/Calorie-Tracker/',
     projectSourceCodeURL: 'https://github.com/AtanasVihrogonov/Calorie-Tracker',
   },
