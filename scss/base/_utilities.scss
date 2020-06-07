@@ -1,8 +1,5 @@
 .wrap {
   padding-top: 1px;
-  // max-width: 1800px;
-  // margin: 0 auto;
-  
   &__content {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
