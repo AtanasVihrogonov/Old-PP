@@ -1,6 +1,6 @@
 .portfolio {
-  border-right: 2px solid $wrap-color;
-  @include grid;
+  @include grid-portfolio;
+  gap: 1px;
   &__wrapper {
     &-item {
       @include position-item;
@@ -8,13 +8,14 @@
       background: #111417;
       text-align: center;
       cursor: pointer;
-
       img {
         display: block;
         max-width: 100%;
         max-height: 100%;
         width: max-content;
         height: 100%;
+        object-fit: content;
+        opacity: 0.75;
         @include respond(phone) {
           width: 100%;
           height: max-content;
@@ -33,7 +34,6 @@
         justify-content: center;
         align-items:center;
         transition: opacity 0.3s ease ease-in;
-
         .portfolio__item-meta {
           animation: moving 0.8s;
 
@@ -41,7 +41,6 @@
             from {transform: translateX(-80px);}
             to {transform: translateX(1px);}
           }
-
           h5 {
             letter-spacing: 1px;
             font-weight: 400;
@@ -49,7 +48,6 @@
             text-transform: uppercase;
             margin: 0.2rem;
           }
-
           p {
             color: #8A8A8A;
             font-size: 0.9rem;
@@ -61,34 +59,42 @@
         font-size: 0.7rem;
         color: $secondary-color;
         padding-bottom: 5rem;
-        i {
-          padding-top: 1.5rem;
-        }
+        i { padding-top: 1.5rem; }
       }
     }
 
     &-item:hover {
-      .overlay {
-        display: flex;
-      }
+      .overlay { display: flex; }
       img {
         transform: scale(1.1);
         transition: all 0.3s ease-in-out;
       }
     }
-
     /* media queries - portfolio */
     @media only screen and (max-width:1300px) {
       width: 100%;
       padding: 0;
     }
   }
-  
+
+  @media only screen and (min-width:1328px){
+    @include grid-social;
+  }
+  @media only screen and (max-width:800px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1px;
+    grid-template-areas: ". ." ". ." ". .";
+  }
   @include respond(phone) {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px 10px;
     grid-template-areas: "." "." "." "." "." ".";
     font-size: 1.2rem;
+    padding: .8rem;
+    background-color: $secondary-color;
   }
 }
 

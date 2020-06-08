@@ -23,7 +23,7 @@ const portfolioData = [
     projectName: 'Vanilla JS Projects',
     projectType: 'Front-End',
     projectDescription: 'Mini projects built with HTML5, CSS & JavaScript. No frameworks or libraries',
-    projectImageURL: './img/projects/vanilla-js.png',
+    projectImageURL: './img/projects/vanilajs.png',
     projectliveURL: 'https://dreamy-pare-efdd98.netlify.app/',
     projectSourceCodeURL: 'https://github.com/AtanasVihrogonov/vanilawebprojects',
   },
@@ -32,7 +32,7 @@ const portfolioData = [
     projectName: 'Calorie Tracker',
     projectType: 'Front-End',
     projectDescription: 'Simple Tracalorie | Meal & Calorie Tracker',
-    projectImageURL: './img/projects/calorie-tracker.png',
+    projectImageURL: './img/projects/cal.png',
     projectliveURL: 'https://atanasvihrogonov.github.io/Calorie-Tracker/',
     projectSourceCodeURL: 'https://github.com/AtanasVihrogonov/Calorie-Tracker',
   },
@@ -153,5 +153,4 @@ const onPageLoad = () => {
 }
 
 window.addEventListener('DOMContentLoaded', onPageLoad);
-
 

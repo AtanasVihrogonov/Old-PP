@@ -1,6 +1,6 @@
 /* 
     0   -   600px:  Phone
-  600   -   900px:  Tablet Portrait
+  500   -   900px:  Tablet Portrait
   900   -   1200px:  Tablet Landscape
   [1200 - 1800] is where my normal styles apply
   1800px + :  Big Desktop
@@ -99,7 +99,7 @@ p {
     @media screen and (min-width: 1024px) {
       .wrap__content {
         grid-template-columns: repeat(2, 1fr); } }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 31.25em) {
       .wrap__content {
         grid-gap: 0;
         margin: 0;
@@ -118,7 +118,7 @@ p {
   background-color: #fff;
   width: 100%;
   max-height: 550px; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 31.25em) {
     .box {
       max-height: 1110px; } }
   @media only screen and (min-width: 601px) and (max-width: 1023px) {
@@ -155,7 +155,7 @@ p {
   font-weight: 400;
   letter-spacing: 0.06rem;
   margin-right: 15px; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 31.25em) {
     .button {
       font-size: 10px; } }
   .button--secondary {
@@ -202,7 +202,7 @@ p {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas: ". . ." ". . ."; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 31.25em) {
     .social {
       display: grid;
       grid-template-columns: repeat(6, 1fr);
@@ -238,7 +238,7 @@ p {
   .social__content .iconify {
     color: #fff;
     font-size: 45px; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 31.25em) {
       .social__content i.fa,
       .social__content i.fab,
       .social__content .iconify {
@@ -246,13 +246,13 @@ p {
   .social__content img {
     height: 45px;
     width: 45px; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 31.25em) {
       .social__content img {
         height: 25px;
         width: 25px; } }
   .social__content .saylor-icon {
     width: 60px; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 31.25em) {
       .social__content .saylor-icon {
         width: 40px; } }
   .social__content {
@@ -281,7 +281,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-around; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 31.25em) {
     .profile__button {
       margin-top: 2rem; } }
 
@@ -294,7 +294,7 @@ p {
   .profileImage__item {
     text-align: center;
     height: 70%; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 31.25em) {
       .profileImage__item {
         height: 250px; } }
     .profileImage__item img {
@@ -303,7 +303,7 @@ p {
       border: 5px inset #554f56;
       border-radius: 30px 10px 30px 10px;
       object-fit: cover; }
-      @media only screen and (max-width: 37.5em) {
+      @media only screen and (max-width: 31.25em) {
         .profileImage__item img {
           border: 5px solid #554f56; } }
   .profileImage__heading-wrapper {
@@ -312,11 +312,11 @@ p {
     justify-content: space-around; }
 
 .portfolio {
-  border-right: 2px solid #dfe1e0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: ". . ." ". . ."; }
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: ". . " ". . " ". .";
+  gap: 1px; }
   .portfolio__wrapper {
     /* media queries - portfolio */ }
     .portfolio__wrapper-item {
@@ -333,8 +333,10 @@ p {
         max-width: 100%;
         max-height: 100%;
         width: max-content;
-        height: 100%; }
-        @media only screen and (max-width: 37.5em) {
+        height: 100%;
+        object-fit: content;
+        opacity: 0.75; }
+        @media only screen and (max-width: 31.25em) {
           .portfolio__wrapper-item img {
             width: 100%;
             height: max-content; } }
@@ -382,12 +384,28 @@ p {
       .portfolio__wrapper {
         width: 100%;
         padding: 0; } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (min-width: 1328px) {
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: ". . ." ". . ."; } }
+  @media only screen and (max-width: 800px) {
+    .portfolio {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 1px;
+      grid-template-areas: ". ." ". ." ". ."; } }
+  @media only screen and (max-width: 31.25em) {
     .portfolio {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      gap: 10px 10px;
       grid-template-areas: "." "." "." "." "." ".";
-      font-size: 1.2rem; } }
+      font-size: 1.2rem;
+      padding: .8rem;
+      background-color: #fff; } }
 
 .contact {
   background-color: #252525;
@@ -420,7 +438,7 @@ p {
     flex-wrap: wrap;
     flex-direction: column;
     padding: 0 30px; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 31.25em) {
       .contact__wrapper {
         padding: 0; } }
     .contact__wrapper .show-map {
@@ -451,7 +469,7 @@ p {
   .contact__address {
     display: flex;
     padding-bottom: 8rem; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 31.25em) {
       .contact__address {
         padding-bottom: 0; } }
     .contact__address-sub {
@@ -494,7 +512,7 @@ p {
     justify-content: space-around;
     width: 50%;
     margin-bottom: 3rem; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 31.25em) {
       .skills__container {
         width: 100%; } }
     @media only screen and (max-width: 75em) {
@@ -513,7 +531,7 @@ p {
         @media only screen and (max-width: 75em) {
           .skills__container .skill-bars li {
             width: 100%; } }
-        @media only screen and (max-width: 37.5em) {
+        @media only screen and (max-width: 31.25em) {
           .skills__container .skill-bars li {
             width: 100%; } }
         .skills__container .skill-bars li .progress {
@@ -585,7 +603,7 @@ p {
         width: 100%;
         margin-bottom: 0;
         font-size: 2.5rem; } }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 31.25em) {
       .skills__icon-wrap {
         font-size: 2.2rem;
         width: 100%; } }
@@ -693,7 +711,7 @@ p {
     align-items: center;
     font-size: 0.9rem;
     font-weight: bold; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 31.25em) {
       .footer__content {
         letter-spacing: 1px;
         padding: 10px; } }
@@ -705,6 +723,6 @@ p {
       @media only screen and (min-width: 1400px) {
         .footer__content .button {
           left: 49%; } }
-      @media only screen and (max-width: 37.5em) {
+      @media only screen and (max-width: 31.25em) {
         .footer__content .button {
           left: 45%; } }

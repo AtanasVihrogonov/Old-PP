@@ -1,9 +1,8 @@
 .social {
-  @include grid;
-  
+  @include grid-social;
   @include respond(phone) {
-   @include grid-sm;
-   font-size: 10px;
+    @include grid-sm;
+    font-size: 10px;
   }
 
   &__icon {
