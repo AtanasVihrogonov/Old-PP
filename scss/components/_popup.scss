@@ -18,15 +18,21 @@
   color: $third-color;
   position: absolute;
   transition: all 1s ease-in-out;
-  width: 25%;
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
   top: 20%;
   left: 50%;
   animation: animate-popup 1s;
   transform: translate(-50%, 0);
 
+  @include respond(phone) {
+    left: 50%;
+  }
+
   .media img {
     width: 100%;
-    height: 350px;
+    max-height: 350px;
   }
 
   .description-box {
@@ -87,3 +93,5 @@
     }
   }
 }
+
+
