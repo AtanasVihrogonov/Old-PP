@@ -74,7 +74,7 @@ const onClickPortfolioItem = event => {
   
   // Create modal template
   const template = `
-    <div class="popup-modal">
+    <div class="popup-modal ">
       <div class="media">
         <img src=${clickedProjectData.projectImageURL} alt="" />
       </div>
@@ -94,6 +94,7 @@ const onClickPortfolioItem = event => {
       </div>
     </div>
   `;
+ 
   modal.innerHTML = template;
   body.appendChild(modal);
   const closeModalButton = document.querySelector('#closeModalButton');
