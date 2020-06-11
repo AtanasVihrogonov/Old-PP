@@ -135,8 +135,7 @@ p {
   margin: 1.2rem 0; }
 
 .profile__heading,
-.skills__heading,
-.heading {
+.skills__heading {
   margin-bottom: 2rem; }
 
 .header__buttons {
@@ -290,7 +289,7 @@ p {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 6rem 3rem 3rem; }
+  padding: 3rem; }
   .profileImage__item {
     text-align: center;
     height: 70%; }
@@ -475,7 +474,6 @@ p {
     .contact__address-sub {
       width: 50%; }
   .contact__form {
-    margin-top: 2rem;
     font-size: 1rem;
     margin: 0 auto; }
     .contact__form .alert {
@@ -485,6 +483,10 @@ p {
       color: #fff;
       margin-bottom: 0.5rem;
       display: none; }
+    .contact__form #message, .contact__form #email, .contact__form #name {
+      margin-bottom: 1rem; }
+    .contact__form .if-none {
+      visibility: hidden; }
 
 .contact.active {
   background-color: #dfe1e0; }

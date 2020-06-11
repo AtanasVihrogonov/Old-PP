@@ -151,6 +151,26 @@ const toogleMapInfoHandler = () => {
 const onPageLoad = () => {
   renderPortfolioSectionHandler();
   toogleMapInfoHandler()
+  const submitButtun = document.querySelector('#submit-button');
+  submitButtun.addEventListener("click", (e) => {
+    const form =  document.querySelector('#gform')
+    let name = document.querySelector('#name').value;
+    let email = document.querySelector('#email').value;
+    let message = document.querySelector('#message').value;
+
+    // Show alert 
+    if(name && email && message){
+      setTimeout(function(){
+        //Reset form
+        document.querySelector('.alert').style.display = 'block';
+        form.reset();
+      });
+      // Hide alert after 4s
+      setTimeout(function(){
+        document.querySelector('.alert').style.display = 'none';
+      }, 4000);
+    }
+  });
 }
 
 window.addEventListener('DOMContentLoaded', onPageLoad);

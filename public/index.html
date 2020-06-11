@@ -218,26 +218,42 @@
               <h2>Contact</h2>
             </div>
             <div class="alert">Your message has been sent.</div>
-            <form  role="form" id="contactForm" class="form" data-toggle="validator">
-              <!-- Name -->
+
+            <!-- <form action="https://script.google.com/macros/s/AKfycby342hhfdb5Lq5_K4pinLBSTXVkHhE65fnB53ah/exec" method="POST" id="gform" class="form " data-email="from_email@example.com" data-toggle="validator">
+              
               <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required/>
               </div>
-              <!-- Email -->
+             
               <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required/>
               </div>
-              <!-- Message -->
+              
               <div class="form-group">
                 <label for="message">Message</label>
                 <textarea class="form-control" name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
               </div>
               <button type="submit" id="submit" class="button button--secondary">Submit</button>
+            </form> -->
+            <iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe" class="if-none"></iframe>
+            <form  target="dummyframe" id="gform" method="POST" class="pure-form pure-form-stacked" action="https://script.google.com/macros/s/AKfycby342hhfdb5Lq5_K4pinLBSTXVkHhE65fnB53ah/exec">
+              <label for="name">Name: </label>
+              <input id="name" name="name" placeholder="Enter your name" required/>
+              <br>
+		          <label for="email">Email: </label>
+              <input id="email" name="email" type="email" value="" required placeholder="Enter your email" />
+              <br>
+		          <label for="message">Message: </label>
+              <textarea id="message" name="message" rows="10" placeholder="Your Message" required></textarea>
+              <button  id="submit-button" class="button button--secondary">
+                <i class="fa fa-paper-plane"></i>&nbsp;Send
+              </button>
             </form>
+           
           </div>
-        </section>
+        </section> 
 
       </div>
 
@@ -256,7 +272,6 @@
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-firestore.js"></script>
-    <script src="./js/app.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>
