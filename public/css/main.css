@@ -293,7 +293,7 @@ p {
   .profileImage__item {
     text-align: center;
     height: 70%;
-    filter: drop-shadow(0.3em 0.3em); }
+    filter: drop-shadow(-0.2em 0.3em); }
     @media only screen and (max-width: 31.25em) {
       .profileImage__item {
         height: 250px; } }

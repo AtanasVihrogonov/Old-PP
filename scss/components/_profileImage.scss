@@ -8,7 +8,7 @@
   &__item {
     text-align: center;
     height: 70%;
-    filter: drop-shadow( .30em .30em);
+    filter: drop-shadow(-.20em .30em);
 
     @include respond(phone) {
       height: 250px;
