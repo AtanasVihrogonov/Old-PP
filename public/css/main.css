@@ -346,7 +346,7 @@ p {
         right: 0;
         bottom: 0;
         flex-direction: column;
-        background: rgba(0, 0, 0, 0.7);
+        background: rgba(0, 0, 0, 0.4);
         position: absolute;
         justify-content: center;
         align-items: center;
@@ -366,7 +366,7 @@ p {
             text-transform: uppercase;
             margin: 0.2rem; }
           .portfolio__wrapper-item .overlay .portfolio__item-meta p {
-            color: #8A8A8A;
+            color: #fff;
             font-size: 0.9rem; }
       .portfolio__wrapper-item .link-icon {
         font-size: 0.7rem;

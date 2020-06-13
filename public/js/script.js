@@ -11,12 +11,12 @@ const portfolioData = [
   },
   {
     id: "2",
-    projectName: 'Project Name',
-    projectType: 'Front-End',
-    projectDescription: 'description',
-    projectImageURL: './img/projects/rsz_lighthouse.jpg',
-    projectliveURL: 'https://www.google.com/',
-    projectSourceCodeURL: 'https://github.com/',
+    projectName: 'Laptop Store',
+    projectType: 'Full-Stack',
+    projectDescription: 'Simple mini project barely scratch the surface of Node.js',
+    projectImageURL: './img/projects/laptop-store.png',
+    projectliveURL: '#',
+    projectSourceCodeURL: 'https://github.com/AtanasVihrogonov/Laptop-Store',
   },
   {
     id: "3",

@@ -29,7 +29,7 @@
         right: 0;
         bottom: 0;
         flex-direction: column;
-        background: rgba(0, 0, 0, 0.7);
+        background: rgba(0, 0, 0, .4);
         position: absolute;
         justify-content: center;
         align-items:center;
@@ -49,7 +49,7 @@
             margin: 0.2rem;
           }
           p {
-            color: #8A8A8A;
+            color: $secondary-color;
             font-size: 0.9rem;
           }
         }
