@@ -292,14 +292,14 @@ p {
   padding: 3rem; }
   .profileImage__item {
     text-align: center;
-    height: 70%; }
+    height: 70%;
+    filter: drop-shadow(0.3em 0.3em); }
     @media only screen and (max-width: 31.25em) {
       .profileImage__item {
         height: 250px; } }
     .profileImage__item img {
       width: auto;
       height: 100%;
-      border: 5px inset #554f56;
       border-radius: 30px 10px 30px 10px;
       object-fit: cover; }
       @media only screen and (max-width: 31.25em) {

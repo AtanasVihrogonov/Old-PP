@@ -15,7 +15,7 @@ const portfolioData = [
     projectType: 'Full-Stack',
     projectDescription: 'Simple mini project barely scratch the surface of Node.js',
     projectImageURL: './img/projects/laptop-store.png',
-    projectliveURL: '#',
+    projectliveURL: 'https://laptop-store2020.herokuapp.com/',
     projectSourceCodeURL: 'https://github.com/AtanasVihrogonov/Laptop-Store',
   },
   {
