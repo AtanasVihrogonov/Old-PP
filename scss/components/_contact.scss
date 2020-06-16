@@ -46,7 +46,7 @@
     }
 
     .show-map {
-      display: block;
+      display: inline-block;
       bottom: 1px;
       color: $secondary-color;
       font-size: .9rem;
@@ -58,6 +58,12 @@
         padding-top: 18px;
         padding-right: 15px;
         font-size: 1.3rem;
+      }
+    }
+    .show-map:hover {
+      text-decoration: underline;
+      i {
+        transform: scale(1.01);
       }
     }
   }
@@ -93,7 +99,6 @@
   }
 
   &__form {
-    //margin-top: 2rem;
     font-size: 1rem;
     margin: 0 auto;
     .alert {
@@ -122,4 +127,7 @@
     display: block;
   }
 }
+
+
+
 

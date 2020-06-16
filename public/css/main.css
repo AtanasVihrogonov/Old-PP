@@ -441,7 +441,7 @@ p {
       .contact__wrapper {
         padding: 0; } }
     .contact__wrapper .show-map {
-      display: block;
+      display: inline-block;
       bottom: 1px;
       color: #fff;
       font-size: .9rem;
@@ -452,6 +452,10 @@ p {
         padding-top: 18px;
         padding-right: 15px;
         font-size: 1.3rem; }
+    .contact__wrapper .show-map:hover {
+      text-decoration: underline; }
+      .contact__wrapper .show-map:hover i {
+        transform: scale(1.01); }
   .contact__group {
     margin-bottom: 30px;
     padding: 7px 0 7px 20px;
