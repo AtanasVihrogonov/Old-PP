@@ -29,7 +29,7 @@
         right: 0;
         bottom: 0;
         flex-direction: column;
-        background: rgba(0, 0, 0, .5);
+        background: rgba(0, 0, 0, .85);
         position: absolute;
         justify-content: center;
         align-items:center;
@@ -97,5 +97,6 @@
     background-color: $secondary-color;
   }
 }
+
 
 
