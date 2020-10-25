@@ -4,7 +4,7 @@ public/favicon-96x96.png
 public/android-chrome-192x192.png
 public/android-chrome-512x512.png
 public/apple-touch-icon.png
-img
+/[Ii]img/
 public/img
 .DS_Store
 .vscode
