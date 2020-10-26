@@ -1,6 +1,6 @@
 /node_modules
-public/.ico
-public/.png
+public/*.ico
+public/*.png
 */img/*
 img/*
 public/img
