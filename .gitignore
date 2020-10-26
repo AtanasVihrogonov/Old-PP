@@ -1,8 +1,0 @@
-/node_modules
-public/*.ico
-public/*.png
-*/img/*
-img/*
-public/img
-.DS_Store
-.vscode
