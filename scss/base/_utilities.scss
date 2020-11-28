@@ -16,14 +16,13 @@
     }
   }
 }
+
 @media screen and (min-width: 1800px) {
   body {
     background-color: $secondary-color;
     max-width: 1800px;
     margin: 0 auto;
-    .wrap {
-      background-color: $wrap-color;
-    }
+    .wrap { background-color: $wrap-color; }
   }
 }
 
@@ -38,9 +37,7 @@
     height: 550px;
   }
 
-  &-withPadding {
-    padding: 3rem;
-  }
+  &-withPadding { padding: 3rem; }
 }
 
 .list-unstyled {
@@ -48,9 +45,7 @@
   list-style: none;
 }
 
-.form-group {
-  margin: 1.2rem 0;
-}
+.form-group { margin: 1.2rem 0; }
 
 .profile__heading,
 .skills__heading {

@@ -1,59 +1,67 @@
 // Portfolio data
-const portfolioData = [ 
+const portfolioData = [
   {
-    id: "1",
+    id: '1',
     projectName: 'Personal Portfolio',
     projectType: 'Front-End',
-    projectDescription: 'This is my Portfolio Website. It does not only showcase my previous samples of work but also itself is an example of what I can do!',
+    projectDescription:
+      'This is my Portfolio Website. It does not only showcase my previous samples of work but also itself is an example of what I can do!',
     projectImageURL: './img/projects/personal-portfolio.jpg',
     projectliveURL: 'https://avihrogonov.co.uk/',
-    projectSourceCodeURL: 'https://github.com/AtanasVihrogonov/Personal-Portfolio',
+    projectSourceCodeURL:
+      'https://github.com/AtanasVihrogonov/Personal-Portfolio',
   },
   {
-    id: "2",
-    projectName: 'Laptop Store',
+    id: '2',
+    projectName: 'VStore',
     projectType: 'Full-Stack',
-    projectDescription: 'Simple mini project barely scratch the surface of Node.js',
-    projectImageURL: './img/projects/laptop-store.png',
-    projectliveURL: 'https://laptop-store2020.herokuapp.com/',
-    projectSourceCodeURL: 'https://github.com/AtanasVihrogonov/Laptop-Store',
+    projectDescription:
+      'Fully-function website using Vanilla JavaScript, HTML5 and CSS3 in frontend and Node.js, MongoDB in the backend.',
+    projectImageURL: './img/projects/VStore.jpg',
+    projectliveURL: 'https://vstoreapp.herokuapp.com/',
+    projectSourceCodeURL: 'https://github.com/AtanasVihrogonov/VStore',
   },
   {
-    id: "3",
+    id: '3',
     projectName: 'Vanilla JS Projects',
     projectType: 'Front-End',
-    projectDescription: 'Mini projects built with HTML5, CSS & JavaScript. No frameworks or libraries',
+    projectDescription:
+      'Mini projects built with HTML5, CSS & JavaScript. No frameworks or libraries',
     projectImageURL: './img/projects/vanilajs.png',
     projectliveURL: 'https://dreamy-pare-efdd98.netlify.app/',
-    projectSourceCodeURL: 'https://github.com/AtanasVihrogonov/vanilawebprojects',
+    projectSourceCodeURL:
+      'https://github.com/AtanasVihrogonov/vanilawebprojects',
   },
   {
-    id: "4",
-    projectName: 'Calorie Tracker',
+    id: '4',
+    projectName: 'AvistOne',
     projectType: 'Front-End',
-    projectDescription: 'Simple Tracalorie | Meal & Calorie Tracker',
-    projectImageURL: './img/projects/cal.png',
-    projectliveURL: 'https://atanasvihrogonov.github.io/Calorie-Tracker/',
-    projectSourceCodeURL: 'https://github.com/AtanasVihrogonov/Calorie-Tracker',
+    projectDescription:
+      'AvistOne is a fake cloud hosting platform website created with custom CSS like Bootstrap.',
+    projectImageURL: './img/projects/AvistOne.jpg',
+    projectliveURL: 'https://distracted-golick-6ede48.netlify.app/index.html',
+    projectSourceCodeURL: 'https://github.com/AtanasVihrogonov/AvistOne',
   },
   {
-    id: "5",
+    id: '5',
     projectName: 'Fork Recipes',
     projectType: 'Front-End',
-    projectDescription: 'Recipe searching app. A starter pack to build JavaScript applications. It uses webpack, Babel and webpack-dev-server to compile and serve. The data come from own API based on the food2fork API, which is simply called forkify-api.',
+    projectDescription:
+      'Recipe searching app. A starter pack to build JavaScript applications. It uses webpack, Babel and webpack-dev-server to compile and serve. The data come from own API based on the food2fork API, which is simply called forkify-api.',
     projectImageURL: './img/projects/fork-recipes.jpg',
     projectliveURL: 'https://atanasvihrogonov.github.io/Fork-recipes/',
     projectSourceCodeURL: 'https://github.com/AtanasVihrogonov/Fork-recipes',
   },
   {
-    id: "6",
+    id: '6',
     projectName: 'Budget App',
     projectType: 'Front-End',
-    projectDescription: 'Budget app with javascript module pattern using few different controller.',
+    projectDescription:
+      'Budget app with javascript module pattern using few different controller.',
     projectImageURL: './img/projects/budget-app.png',
     projectliveURL: 'https://atanasvihrogonov.github.io/Budget-App/',
     projectSourceCodeURL: 'https://github.com/AtanasVihrogonov/Budget-App',
-  }
+  },
 ];
 
 // Button close functionality

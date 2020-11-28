@@ -12,17 +12,12 @@
     text-decoration: none;
     cursor: pointer;
 
-    .fa-info {
-      padding-right: .5rem;
-    }
-  }
-  .show__info-link:hover {
-    color: red;
+    .fa-info { padding-right: .5rem; }
   }
 
-  .resp-iframe {
-    display: none;
-  }
+  .show__info-link:hover { color: red; }
+
+  .resp-iframe { display: none; }
 
   // generate from JS
   .show-resp-iframe {
@@ -41,9 +36,7 @@
     flex-wrap: wrap;
     flex-direction: column;
     padding: 0 30px;
-    @include respond(phone) {
-      padding: 0;
-    }
+    @include respond(phone) { padding: 0; }
 
     .show-map {
       display: inline-block;
@@ -60,11 +53,10 @@
         font-size: 1.3rem;
       }
     }
+
     .show-map:hover {
       text-decoration: underline;
-      i {
-        transform: scale(1.01);
-      }
+      i { transform: scale(1.01); }
     }
   }
 
@@ -90,12 +82,9 @@
   &__address {
     display: flex;
     padding-bottom: 8rem;
-    @include respond(phone) {
-      padding-bottom: 0;
-    }
-    &-sub {
-      width: 50%;
-    }
+    @include respond(phone) { padding-bottom: 0; }
+
+    &-sub { width: 50%; }
   }
 
   &__form {
@@ -110,22 +99,16 @@
       display: none;
     }
 
-    #message, #email, #name {
-      margin-bottom: 1rem;
-    }
+    #message, #email, #name { margin-bottom: 1rem; }
 
-    .if-none {
-      visibility: hidden;
-    }
+    .if-none { visibility: hidden; }
   }
 }
 
 // generate from JS
 .contact.active {
   background-color: $wrap-color;
-  .show__info-link {
-    display: block;
-  }
+  .show__info-link { display: block; }
 }
 
 

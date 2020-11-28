@@ -10,9 +10,7 @@
     height: 70%;
     filter: drop-shadow( -.20em .30em);
 
-    @include respond(phone) {
-      height: 250px;
-    }
+    @include respond(phone) { height: 250px; }
 
     img {
       width: auto;

@@ -343,7 +343,7 @@ p {
         right: 0;
         bottom: 0;
         flex-direction: column;
-        background: rgba(0, 0, 0, 0.85);
+        background: rgba(0, 0, 0, 0.75);
         position: absolute;
         justify-content: center;
         align-items: center;
@@ -375,7 +375,7 @@ p {
       display: flex; }
     .portfolio__wrapper-item:hover img {
       transform: scale(1.1);
-      transition: all 0.3s ease-in-out; }
+      transition: all 0.5s ease-in-out; }
     @media only screen and (max-width: 1300px) {
       .portfolio__wrapper {
         width: 100%;
@@ -671,12 +671,10 @@ p {
       text-decoration: underline; }
   .popup-modal .popup-buttons {
     width: 100%;
-    background: #000000;
     display: flex;
     justify-content: space-around; }
     .popup-modal .popup-buttons .btn {
       width: 50%;
-      background: #000000;
       outline: none;
       text-decoration: none;
       text-align: center;
@@ -686,10 +684,15 @@ p {
       letter-spacing: 3px;
       font-weight: 500;
       line-height: 3.2rem;
-      font-size: 0.85rem; }
-    .popup-modal .popup-buttons .btn:hover {
-      background-color: #a1a1a1;
-      transition: all ease-in-out .3s; }
+      font-size: 0.85rem;
+      border-right: 2px solid #fff; }
+    .popup-modal .popup-buttons .btn-view,
+    .popup-modal .popup-buttons .btn-dismiss {
+      background-color: #dfe1e0;
+      color: #252525; }
+      .popup-modal .popup-buttons .btn-view:hover,
+      .popup-modal .popup-buttons .btn-dismiss:hover {
+        font-weight: bold; }
 
 .header {
   background-size: cover;

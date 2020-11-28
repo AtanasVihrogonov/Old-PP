@@ -57,9 +57,7 @@
   &__content {
     .saylor-icon {
       width: 60px;
-      @include respond(phone) {
-        width: 40px;
-      }
+      @include respond(phone) { width: 40px; }
     }
   }  
 
@@ -71,38 +69,24 @@
     transform: translateY(-50%);
   }
 
-  .social__box {
-    height: 100%;
-  }
+  .social__box { height: 100%; }
 
   &__icon-github:hover {
-    .social__box {
-      background: #211f1f;
-    }
+    .social__box { background: #211f1f; }
   }
   &__icon-twitter:hover {
-    .social__box {
-      background: #32ccfe;
-    }
+    .social__box { background: #32ccfe; }
   }
   &__icon-linkedin-in:hover {
-    .social__box {
-      background: #0e76a8;
-   }
+    .social__box { background: #0e76a8; }
   }
   &__icon-saylor-academy:hover {
-    .social__box {
-      background:#354a58;
-    }
+    .social__box { background:#354a58; }
   }
   &__icon-codewars:hover {
-    .social__box {
-      background: #bb432c;
-    }
+    .social__box { background: #bb432c; }
   }
   &__icon-sololearn:hover {
-    .social__box {
-      background: #969394;
-    }
+    .social__box { background: #969394; }
   }
 }

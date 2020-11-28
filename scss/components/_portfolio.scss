@@ -29,7 +29,7 @@
         right: 0;
         bottom: 0;
         flex-direction: column;
-        background: rgba(0, 0, 0, .85);
+        background: rgba(0, 0, 0, .75);
         position: absolute;
         justify-content: center;
         align-items:center;
@@ -67,7 +67,7 @@
       .overlay { display: flex; }
       img {
         transform: scale(1.1);
-        transition: all 0.3s ease-in-out;
+        transition: all 0.5s ease-in-out;
       }
     }
     /* media queries - portfolio */
